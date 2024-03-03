@@ -28,7 +28,7 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body style="height: 10000px">
+    <body>
         <!-- Header -->
 
         <header class="header">
@@ -50,7 +50,7 @@
                     /> -->
                 </a>
 
-                <ul class="navigation">
+                <ul id="navigation_header" class="navigation">
                     <li>
                         <a href="#!">Projects</a>
                     </li>
@@ -64,6 +64,7 @@
                         <a href="#!">Contact</a>
                     </li>
                 </ul>
+
             </div>
             <div class="fixed-bg-navbar"></div>
             <div class="fixed-header"></div>
@@ -499,6 +500,71 @@
                 </div>
             </div>
         </section>
+
+        <!-- My atmosphere -->
+
+        <section class="atmosphere">
+            <div class="container">
+                <h2 class="title">My atmosphere</h2>
+                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                <article class="my-tag">@interaction_arif</article>
+                <div class="wrapper-group">
+                    <div class="row row-cols-lg-3">
+                        <div class="col">
+                            <img src="./assets/images/atmosphere/item1.jpg" alt="" class="item-img">
+                        </div>
+                        <div class="col">
+                            <img src="./assets/images/atmosphere/item2.jpg" alt="" class="item-img">
+                        </div>
+                        <div class="col">
+                            <img src="./assets/images/atmosphere/item3.jpg" alt="" class="item-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA section -->
+
+        <section class="cta-group">
+            <div class="container">
+                <div class="cta-fixed-bg"></div>
+                <p class="cta-icon">🤪</p>
+                <h2 class="cta-title">Got a project? Let’s talk</h2>
+                <p class="cta-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                <a class="btn cta-btn">
+                    Book a Call
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="content">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <a href="mailto:cuaconca@gmail.com" class="contact-me">
+                            <img src="./assets/images/icon-contact-me.svg" alt="" class="img-logo">
+                            <p class="desc">cuaconca@gmail.com</p>
+                        </a>
+                    </div>
+                    <ul class="footer-col" id="navigation_footer"></ul>
+                              
+                    <script>
+                        document.querySelector("#navigation_footer").innerHTML = document.querySelector("#navigation_header").innerHTML
+                    </script>
+
+                </div>
+
+                <div class="footer-row">
+                    <p class="footer-cre">©interactiveArif 2021. All rights reserved.</p>
+                    <div class="footer-col">
+                        <a href="#!" class="policy">Privacy Policy</a>
+                        <a href="#!" class="condition">Terms of Conditions</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
     </body>
 
     <script src="./index.js"></script>
