@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Apply on mobile
     if (screen.width <= 991.98) {
 
         document.querySelector(".specialities").querySelector(".row").classList.add("carousel-container")
@@ -59,6 +60,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
         showSlide(currentIndex);
 
-    }
-
+    } 
 })

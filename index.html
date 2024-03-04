@@ -27,8 +27,17 @@
         <link rel="stylesheet" href="./assets/css/grid.css" />
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+        <!-- Animate CSS -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+        <!-- AOS animate on scroll -->
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     </head>
-    <body style="height: 10000px;">
+    <body>
         <!-- Header -->
 
         <header class="header">
@@ -95,18 +104,18 @@
                         <img
                             src="./assets/images/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position 1.png"
                             alt=""
-                            class="hero-img"
+                            class="hero-img animate__animated animate__zoomIn"
                         />
                     </div>
                     <div class="hero-col-right">
                         <div class="wrapper">
-                            <h1 class="hero_title">An Interactive Designer</h1>
-                            <p class="hero_desc">
+                            <h1 class="hero_title animate__animated animate__fadeInRight">An Interactive Designer</h1>
+                            <p class="hero_desc animate__animated animate__fadeInRight animate__delay-1s">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipiscing elit. In urna, non nisl tincidunt ut
                                 elementum turpis.
                             </p>
-                            <div class="button-act">
+                            <div class="button-act animate__animated animate__fadeInRight animate__delay-2s">
                                 <a class="btn btn-slide btn_book"
                                     >Book a Call</a
                                 >
@@ -115,7 +124,7 @@
                             </div>
                         </div>
 
-                        <div class="hero-socials">
+                        <div class="hero-socials animate__animated animate__fadeInRight animate__delay-3s">
                             <p class="hero-socials_title">Follow me on:</p>
                             <ul class="hero-socials_image">
                                 <li>
@@ -246,7 +255,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
                         <div class="card-group">
                             <div class="wrapper-img">
                                 <img
@@ -262,7 +271,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
                         <div class="wrapper-img">
                             <img
                                 src="./assets/images/specialities/icon uiux design.svg"
@@ -276,7 +285,7 @@
                             Non nisl solor ut elementum turpis.
                         </p>
                     </div>
-                    <div class="col">
+                    <div class="col" data-aos="fade-up" data-aos-duration="1000">
                         <div class="wrapper-img">
                             <img
                                 src="./assets/images/specialities/icon iteractive design.svg"
@@ -310,7 +319,7 @@
                 </div>
                 <div class="body">
                     <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
-                        <div class="col">
+                        <div class="col" data-aos="fade-right" data-aos-duration="1000">
                             <div class="wrapper">
                                 <div class="col-left">
                                     <h3 class="title">Wally Website</h3>
@@ -329,7 +338,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-left" data-aos-duration="1000">
                             <div class="wrapper">
                                 <div class="col-left">
                                     <h3 class="title">Banking App</h3>
@@ -348,7 +357,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-right" data-aos-duration="2000">
                             <div class="wrapper">
                                 <div class="col-left">
                                     <h3 class="title">Web App</h3>
@@ -367,7 +376,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="fade-left" data-aos-duration="2000">
                             <div class="wrapper">
                                 <div class="col-left">
                                     <h3 class="title">Oculus Website</h3>
@@ -562,21 +571,21 @@
                 <article class="my-tag">@interaction_arif</article>
                 <div class="wrapper-group">
                     <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1">
-                        <div class="col">
+                        <div class="col" data-aos="zoom-in" data-aos-duration="1000">
                             <img
                                 src="./assets/images/atmosphere/item1.jpg"
                                 alt=""
                                 class="item-img"
                             />
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="zoom-in" data-aos-duration="2000">
                             <img
                                 src="./assets/images/atmosphere/item2.jpg"
                                 alt=""
                                 class="item-img"
                             />
                         </div>
-                        <div class="col">
+                        <div class="col" data-aos="zoom-in" data-aos-duration="3000">
                             <img
                                 src="./assets/images/atmosphere/item3.jpg"
                                 alt=""
@@ -630,15 +639,20 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            document.querySelector("#navigation_footer").innerHTML =
+                document.querySelector("#navigation_header").innerHTML;
+
+            document.querySelector("#navigation_mobile").innerHTML =
+                document.querySelector("#navigation_header").innerHTML;
+        </script>
+
+        <script src="./index.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
     </body>
-
-    <script>
-        document.querySelector("#navigation_footer").innerHTML =
-            document.querySelector("#navigation_header").innerHTML;
-
-        document.querySelector("#navigation_mobile").innerHTML =
-            document.querySelector("#navigation_header").innerHTML;
-    </script>
-
-    <script src="./index.js"></script>
 </html>
