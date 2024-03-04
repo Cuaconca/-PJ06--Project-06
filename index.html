@@ -6,7 +6,7 @@
         <title>Project 06</title>
 
         <!-- Favicon -->
-        <link rel="icon" href="./assets/images/Memoji Boys 13-24.svg" />
+        <link rel="icon" href="./assets/images/icon crab 2.png" />
 
         <!-- Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,10 +28,25 @@
         <link rel="stylesheet" href="./assets/css/styles.css" />
         <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
-    <body>
+    <body style="height: 10000px;">
         <!-- Header -->
 
         <header class="header">
+            <!-- Table/mobile header -->
+
+            <input
+                hidden
+                type="checkbox"
+                class="menu-checkbox"
+                id="menu-checkbox"
+            />
+
+            <label for="menu-checkbox" class="menu-overlay"> </label>
+
+            <div class="menu-mobile">
+                <ul id="navigation_mobile" class="navigation_mobile"></ul>
+            </div>
+
             <!-- Navigation -->
             <div class="navbar">
                 <a href="mailto:cuaconca@gmail.com" class="contact-me">
@@ -42,6 +57,11 @@
                     />
                     <p class="contact-me_desc">cuaconca@gmail.com</p>
                 </a>
+
+                <!-- Table/mobile Sidebar -->
+                <label class="menu-drawer_btn" for="menu-checkbox">
+                    <img src="./assets/images/icons/Icon sidebar.svg" alt="" />
+                </label>
 
                 <a href="#!" class="logo-img">
                     <!-- <img
@@ -64,7 +84,6 @@
                         <a href="#!">Contact</a>
                     </li>
                 </ul>
-
             </div>
             <div class="fixed-bg-navbar"></div>
             <div class="fixed-header"></div>
@@ -135,14 +154,14 @@
         <section class="clients">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4">
+                    <div class="col col-lg-4 col-md-12 col-sm-12">
                         <div class="clients-col_left">
                             <div class="bar"></div>
                             <h2 class="title">Meet my recent clients</h2>
                         </div>
                     </div>
 
-                    <div class="col-lg-8">
+                    <div class="col col-lg-8 col-md-12 col-sm-12">
                         <ul class="clients-col_right">
                             <li>
                                 <img
@@ -290,7 +309,7 @@
                     </p>
                 </div>
                 <div class="body">
-                    <div class="row row-cols-lg-2">
+                    <div class="row row-cols-lg-2 row-cols-md-1 row-cols-sm-1">
                         <div class="col">
                             <div class="wrapper">
                                 <div class="col-left">
@@ -458,44 +477,74 @@
                     A few questions clients normally ask me
                 </h2>
 
-                <input type="checkbox" id="faq_ques_1" hidden>
+                <input type="checkbox" id="faq_ques_1" hidden />
                 <div class="faq-group">
                     <div>
-                        <h3 class="faq-group_ques">What is your  hourly rate?</h3>
+                        <h3 class="faq-group_ques">
+                            What is your hourly rate?
+                        </h3>
                         <label for="faq_ques_1" class="faq-group_btn">-</label>
-                        <p class="faq-group_aws">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <p class="faq-group_aws">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
                     </div>
                 </div>
-                <input type="checkbox" id="faq_ques_2" hidden>
+                <input type="checkbox" id="faq_ques_2" hidden />
                 <div class="faq-group">
                     <div>
-                        <h3 class="faq-group_ques">What type of projects do you take on?</h3>
+                        <h3 class="faq-group_ques">
+                            What type of projects do you take on?
+                        </h3>
                         <label for="faq_ques_2" class="faq-group_btn">-</label>
-                        <p class="faq-group_aws">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <p class="faq-group_aws">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
                     </div>
                 </div>
-                <input type="checkbox" id="faq_ques_3" hidden>
+                <input type="checkbox" id="faq_ques_3" hidden />
                 <div class="faq-group">
                     <div>
-                        <h3 class="faq-group_ques">How do you charge for projects ?</h3>
+                        <h3 class="faq-group_ques">
+                            How do you charge for projects ?
+                        </h3>
                         <label for="faq_ques_3" class="faq-group_btn">-</label>
-                        <p class="faq-group_aws">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <p class="faq-group_aws">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
                     </div>
                 </div>
-                <input type="checkbox" id="faq_ques_4" hidden>
+                <input type="checkbox" id="faq_ques_4" hidden />
                 <div class="faq-group">
                     <div>
-                        <h3 class="faq-group_ques">What time-zone do you work in?</h3>
+                        <h3 class="faq-group_ques">
+                            What time-zone do you work in?
+                        </h3>
                         <label for="faq_ques_4" class="faq-group_btn">-</label>
-                        <p class="faq-group_aws">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <p class="faq-group_aws">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
                     </div>
                 </div>
-                <input type="checkbox" id="faq_ques_5" hidden>
+                <input type="checkbox" id="faq_ques_5" hidden />
                 <div class="faq-group">
                     <div>
-                        <h3 class="faq-group_ques">How often can we communicate?</h3>
+                        <h3 class="faq-group_ques">
+                            How often can we communicate?
+                        </h3>
                         <label for="faq_ques_5" class="faq-group_btn">-</label>
-                        <p class="faq-group_aws">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        <p class="faq-group_aws">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. In urna, non nisl tincidunt ut elementum
+                            turpis.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -506,18 +555,33 @@
         <section class="atmosphere">
             <div class="container">
                 <h2 class="title">My atmosphere</h2>
-                <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                <p class="desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
                 <article class="my-tag">@interaction_arif</article>
                 <div class="wrapper-group">
-                    <div class="row row-cols-lg-3">
+                    <div class="row row-cols-lg-3 row-cols-md-1 row-cols-sm-1">
                         <div class="col">
-                            <img src="./assets/images/atmosphere/item1.jpg" alt="" class="item-img">
+                            <img
+                                src="./assets/images/atmosphere/item1.jpg"
+                                alt=""
+                                class="item-img"
+                            />
                         </div>
                         <div class="col">
-                            <img src="./assets/images/atmosphere/item2.jpg" alt="" class="item-img">
+                            <img
+                                src="./assets/images/atmosphere/item2.jpg"
+                                alt=""
+                                class="item-img"
+                            />
                         </div>
                         <div class="col">
-                            <img src="./assets/images/atmosphere/item3.jpg" alt="" class="item-img">
+                            <img
+                                src="./assets/images/atmosphere/item3.jpg"
+                                alt=""
+                                class="item-img"
+                            />
                         </div>
                     </div>
                 </div>
@@ -531,10 +595,11 @@
                 <div class="cta-fixed-bg"></div>
                 <p class="cta-icon">🤪</p>
                 <h2 class="cta-title">Got a project? Let’s talk</h2>
-                <p class="cta-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
-                <a class="btn cta-btn">
-                    Book a Call
-                </a>
+                <p class="cta-desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    urna, non nisl tincidunt ut elementum turpis.
+                </p>
+                <a class="btn cta-btn"> Book a Call </a>
             </div>
         </section>
 
@@ -543,29 +608,37 @@
                 <div class="footer-row">
                     <div class="footer-col">
                         <a href="mailto:cuaconca@gmail.com" class="contact-me">
-                            <img src="./assets/images/icon-contact-me.svg" alt="" class="img-logo">
+                            <img
+                                src="./assets/images/icon-contact-me.svg"
+                                alt=""
+                                class="img-logo"
+                            />
                             <p class="desc">cuaconca@gmail.com</p>
                         </a>
                     </div>
                     <ul class="footer-col" id="navigation_footer"></ul>
-                              
-                    <script>
-                        document.querySelector("#navigation_footer").innerHTML = document.querySelector("#navigation_header").innerHTML
-                    </script>
-
                 </div>
 
                 <div class="footer-row">
-                    <p class="footer-cre">©interactiveArif 2021. All rights reserved.</p>
+                    <p class="footer-cre">
+                        ©interactiveArif 2021. All rights reserved.
+                    </p>
                     <div class="footer-col">
                         <a href="#!" class="policy">Privacy Policy</a>
                         <a href="#!" class="condition">Terms of Conditions</a>
                     </div>
                 </div>
-
             </div>
         </footer>
     </body>
+
+    <script>
+        document.querySelector("#navigation_footer").innerHTML =
+            document.querySelector("#navigation_header").innerHTML;
+
+        document.querySelector("#navigation_mobile").innerHTML =
+            document.querySelector("#navigation_header").innerHTML;
+    </script>
 
     <script src="./index.js"></script>
 </html>
